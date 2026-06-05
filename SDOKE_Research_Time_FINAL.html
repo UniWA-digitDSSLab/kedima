@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η Ώρα του Ερευνητή | Πανεπιστήμιο Δυτικής Αττικής</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Η 2η συνάντηση της «Ώρας του Ερευνητή» της Σχολής ΔΟΚΕ του ΠΑΔΑ: ψηφιακός εκπαιδευτικός σχεδιασμός, δημιουργικότητα, τεχνητή νοημοσύνη και καινοτόμες προσεγγίσεις στη μάθηση. 4 έρευνες, 4 ομιλίες, πλήρες αφιέρωμα.">
+    <meta name="keywords" content="Ώρα του Ερευνητή, ΠΑΔΑ, Σχολή ΔΟΚΕ, σχεδιασμός μάθησης, ψηφιακή δημιουργικότητα, τεχνητή νοημοσύνη στην εκπαίδευση, εγκάρσιες δεξιότητες, Επαγγελματική Εκπαίδευση και Κατάρτιση">
+    <meta name="author" content="Σχολή Διοικητικών, Οικονομικών και Κοινωνικών Επιστημών — Πανεπιστήμιο Δυτικής Αττικής">
+    
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="el_GR">
+    <meta property="og:site_name" content="Πανεπιστήμιο Δυτικής Αττικής">
+    <meta property="og:title" content="Η Ώρα του Ερευνητή — Σχεδιασμός Εμπειριών Μάθησης">
+    <meta property="og:description" content="2η συνάντηση: 4 έρευνες για τον ψηφιακό σχεδιασμό μάθησης, τη δημιουργικότητα και την τεχνητή νοημοσύνη στην εκπαίδευση.">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Η Ώρα του Ερευνητή — Σχεδιασμός Εμπειριών Μάθησης, Σχολή ΔΟΚΕ, Πανεπιστήμιο Δυτικής Αττικής">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Η Ώρα του Ερευνητή — Σχεδιασμός Εμπειριών Μάθησης">
+    <meta name="twitter:description" content="2η συνάντηση: 4 έρευνες για τον ψηφιακό σχεδιασμό μάθησης, τη δημιουργικότητα και την τεχνητή νοημοσύνη στην εκπαίδευση.">
+    <meta name="twitter:image" content="og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://teach.uniwa.gr/wp-content/uploads/sites/684/2023/01/pada-favicon.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter για διεπαφές, Playfair Display για ακαδημαϊκούς τίτλους -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        uniwa: {
+                            blue: '#0B2F64',       /* Επίσημο Μπλε ΠΑΔΑ */
+                            blueDark: '#071F43',   /* Σκούρο Midnight Blue */
+                            blueLight: '#1C4E8C',  /* Ανοιχτότερο Μπλε */
+                            gold: '#D4AF37',       /* Επίσημο Χρυσό ΠΑΔΑ */
+                            goldDark: '#AA8417',   /* Σκούρο Χρυσό */
+                            goldLight: '#F3E5AB',  /* Απαλό Κρεμ/Χρυσό */
+                            grayBg: '#F8FAFC'      /* Πολύ απαλό Slate Gray για φόντο */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .uniwa-gradient {
+            background: linear-gradient(135deg, #071F43 0%, #0B2F64 50%, #153E76 100%);
+        }
+        .text-glow {
+            text-shadow: 0 2px 10px rgba(212, 175, 55, 0.4);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px -2px rgba(11, 47, 100, 0.08);
+        }
+        /* Стили για εκτύπωση */
+        @media print {
+            header, footer, nav, button, .no-print, .tab-navigation {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .print-container {
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-uniwa-grayBg text-slate-900 font-sans selection:bg-uniwa-gold selection:text-uniwa-blueDark overflow-x-hidden">
+
+    <header class="sticky top-0 z-50 bg-uniwa-blueDark/95 backdrop-blur-md text-white border-b border-uniwa-gold/30 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-uniwa-gold p-2.5 rounded-lg shadow-md flex items-center justify-center border border-white/20">
+                    <i class="fa-solid fa-graduation-cap text-uniwa-blueDark text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-[10px] uppercase tracking-wider text-uniwa-gold font-bold block">Πανεπιστήμιο Δυτικής Αττικής</span>
+                    <span class="text-xs sm:text-sm font-serif font-bold text-white tracking-wide block">Σχολή Διοικητικών, Οικονομικών & Κοινωνικών Επιστημών</span>
+                </div>
+            </div>
+            
+            <nav class="hidden lg:flex items-center space-x-6 text-xs uppercase tracking-wider font-semibold text-slate-300">
+                <a href="#about" class="hover:text-uniwa-gold transition-colors duration-200">Η Δράση</a>
+                <a href="#proctors" class="hover:text-uniwa-gold transition-colors duration-200">Χαιρετισμοί</a>
+                <a href="#speakers" class="hover:text-uniwa-gold transition-colors duration-200">Ομιλίες & Έρευνες</a>
+                <a href="#official" class="bg-uniwa-gold/15 text-uniwa-gold border border-uniwa-gold/30 hover:bg-uniwa-gold hover:text-uniwa-blueDark px-3 py-1.5 rounded transition-all duration-300">Δελτίο Τύπου</a>
+            </nav>
+
+            <div class="flex items-center space-x-2">
+                <button onclick="copyPressRelease()" class="bg-uniwa-blueLight hover:bg-uniwa-blue hover:text-uniwa-gold text-white px-3.5 py-2 rounded-lg text-xs font-semibold flex items-center space-x-2 border border-white/10 transition-all">
+                    <i class="fa-regular fa-copy"></i>
+                    <span class="hidden sm:inline">Αντιγραφή Δελτίου</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="relative uniwa-gradient text-white py-16 lg:py-24 overflow-hidden border-b-4 border-uniwa-gold">
+        <!-- SVG Grid Background pattern -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <span class="inline-flex items-center gap-1.5 bg-uniwa-gold/20 border border-uniwa-gold/40 text-uniwa-gold text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Η Ώρα του Ερευνητή
+                </span>
+                
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-white mb-6 leading-tight">
+                    Ψηφιακός Εκπαιδευτικός Σχεδιασμός, Δημιουργικότητα και Καινοτόμες Προσεγγίσεις στη Μάθηση
+                </h1>
+                
+                <p class="text-base sm:text-lg text-slate-200 font-light max-w-3xl mx-auto mb-8 leading-relaxed">
+                    Μια εμβληματική επιστημονική συνάντηση της Σχολής Διοικητικών, Οικονομικών και Κοινωνικών Επιστημών, αφιερωμένη στον μετασχηματισμό της εκπαιδευτικής διαδικασίας στον 21ο αιώνα.
+                </p>
+
+                <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-3.5 rounded-xl max-w-lg mx-auto text-left">
+                    <span class="text-uniwa-gold text-3xl font-serif leading-none">“</span>
+                    <p class="text-xs sm:text-sm font-serif italic text-slate-200">
+                        Η μάθηση δεν συμβαίνει τυχαία, σχεδιάζεται με επιστημονική αυστηρότητα και δημιουργική ενσυναίσθηση.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proctors" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-uniwa-blue text-xs font-bold uppercase tracking-wider block mb-2">ΑΚΑΔΗΜΑΪΚΟΣ ΘΕΣΜΟΣ</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-uniwa-blueDark">Επίσημες Τοποθετήσεις & Χαιρετισμοί</h2>
+                <div class="h-1 w-20 bg-uniwa-gold mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Dean Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg hover:border-uniwa-blue/30 transition-all duration-300 card-shadow">
+                    <div>
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-uniwa-blue flex items-center justify-center text-uniwa-gold shadow-md">
+                                <i class="fa-solid fa-user-tie text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-uniwa-blueDark text-base">κ. Γεώργιος Πιερράκος</h3>
+                                <p class="text-[10px] text-uniwa-goldDark font-bold uppercase tracking-wider">Κοσμήτορας ΣΔΟΚΕ</p>
+                            </div>
+                        </div>
+                        <h4 class="text-xs font-bold text-slate-800 mb-3 border-b border-slate-200 pb-2 flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-chess-knight text-uniwa-gold"></i> Ο Στρατηγικός Ρόλος του Θεσμού
+                        </h4>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 line-clamp-6 italic">
+                            «Η πρωτοβουλία "Η Ώρα του Ερευνητή" υπηρετεί τον κεντρικό στρατηγικό στόχο για ένα ανοικτό πανεπιστήμιο. Μέσα από αυτόν τον θεσμό, καλλιεργείται ένα υποστηρικτικό, συμπεριληπτικό και εξωστρεφές ακαδημαϊκό περιβάλλον που προάγει τον επιστημονικό διάλογο, δίνοντας βήμα στη νέα γενιά ερευνητών και στα μέλη ΔΕΠ για την ανάδειξη του έργου τους.»
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <button onclick="openModal('pierrakos')" class="w-full bg-uniwa-blue/10 hover:bg-uniwa-blue hover:text-white text-uniwa-blue text-xs font-bold py-2.5 rounded-lg transition-all flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-book-open"></i> Πλήρες Κείμενο Χαιρετισμού
+                        </button>
+                        <div class="text-[10px] text-slate-400 font-semibold border-t border-slate-200 pt-3 flex items-center justify-between">
+                            <span><i class="fa-solid fa-building-columns mr-1"></i> ΣΔΟΚΕ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professor Advisor Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg hover:border-uniwa-blue/30 transition-all duration-300 card-shadow">
+                    <div>
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-uniwa-blue flex items-center justify-center text-uniwa-gold shadow-md">
+                                <i class="fa-solid fa-graduation-cap text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-uniwa-blueDark text-base">κ. Ιωάννης Ψαρομήλιγκος</h3>
+                                <p class="text-[10px] text-uniwa-goldDark font-bold uppercase tracking-wider">Καθηγητής Τμ. Διοίκησης Επιχειρήσεων</p>
+                            </div>
+                        </div>
+                        <h4 class="text-xs font-bold text-slate-800 mb-3 border-b border-slate-200 pb-2 flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-award text-uniwa-gold"></i> Η Ακαδημαϊκή Υποστήριξη
+                        </h4>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 line-clamp-6 italic">
+                            «Η εκπαιδευτική διαδικασία στον 21ο αιώνα απαιτεί αλλαγή παραδείγματος. Ο εκπαιδευτικός μετατρέπεται πλέον σε σχεδιαστή εμπειριών μάθησης (Learning Experience Designer). Συνδυάζοντας τη σχεδιαστική αυστηρότητα του μηχανικού με τη δημιουργικότητα του καλλιτέχνη, επαναπροσδιορίζουμε τον τρόπο που μεταδίδεται η γνώση με τη βοήθεια της τεχνολογίας.»
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <button onclick="openModal('psaromiligkos')" class="w-full bg-uniwa-blue/10 hover:bg-uniwa-blue hover:text-white text-uniwa-blue text-xs font-bold py-2.5 rounded-lg transition-all flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-book-open"></i> Πλήρες Κείμενο Προλόγου
+                        </button>
+                        <div class="text-[10px] text-slate-400 font-semibold border-t border-slate-200 pt-3 flex items-center justify-between">
+                            <span><i class="fa-solid fa-microscope mr-1"></i> DigiT-DSS Lab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coordinator Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg hover:border-uniwa-blue/30 transition-all duration-300 card-shadow">
+                    <div>
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-12 h-12 rounded-xl bg-uniwa-blue flex items-center justify-center text-uniwa-gold shadow-md">
+                                <i class="fa-solid fa-users-gear text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-uniwa-blueDark text-base">κα Κλεοπάτρα Κωνσταντουλάκη</h3>
+                                <p class="text-[10px] text-uniwa-goldDark font-bold uppercase tracking-wider">Αναπληρώτρια Καθηγήτρια</p>
+                            </div>
+                        </div>
+                        <h4 class="text-xs font-bold text-slate-800 mb-3 border-b border-slate-200 pb-2 flex items-center gap-1.5 uppercase">
+                            <i class="fa-solid fa-route text-uniwa-gold"></i> Συντονισμός & Φιλοσοφία
+                        </h4>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                            «Αυτή η δεύτερη συνάντηση εστιάζει στην ανθρωπολογική και παιδαγωγική διάσταση της ψηφιακής τεχνολογίας. Μέσα από 4 αλληλοσυμπληρούμενες μελέτες, αποδεικνύουμε πώς η θεωρία συναντά την πράξη με στόχο τον ψηφιακό μετασχηματισμό, τη δημιουργικότητα και την ενσυναίσθηση στην τάξη.»
+                        </p>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-400 font-semibold border-t border-slate-200 pt-3 flex items-center justify-between">
+                            <span><i class="fa-solid fa-circle-nodes mr-1"></i> Συντονίστρια της Εκδήλωσης</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPEECHES SECTION -->
+    <section id="speakers" class="py-16 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-uniwa-blue text-xs font-bold uppercase tracking-wider block mb-2">ΕΠΙΣΤΗΜΟΝΙΚΟ ΠΡΟΓΡΑΜΜΑ</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-uniwa-blueDark">Οι 4 Επιστημονικές Τομές</h2>
+                <p class="text-xs sm:text-sm text-slate-500 mt-2 max-w-lg mx-auto">
+                    Τέσσερις αλληλοσυμπληρούμενες έρευνες (δύο διδακτορικές και δύο μεταδιδακτορικές) σε έναν ενιαίο αρχιτεκτονικό σχεδιασμό μάθησης.
+                </p>
+                <div class="h-1 w-20 bg-uniwa-gold mx-auto mt-4 rounded"></div>
+            </div>
+
+            <!-- SPEECH CARDS WITH TABS -->
+            <div class="space-y-10">
+                
+                <!-- SPEECH 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 card-shadow hover:border-uniwa-gold/50 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+                        <div>
+                            <span class="bg-uniwa-blue/10 text-uniwa-blue text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-md">
+                                ΟΜΙΛΙΑ 1 • Διδακτορική Διατριβή
+                            </span>
+                            <h3 class="text-lg sm:text-xl font-serif font-bold text-uniwa-blueDark mt-2">
+                                Ψηφιακή Δημιουργικότητα στην Εκπαίδευση
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-1 flex items-center gap-1">
+                                <i class="fa-solid fa-user-pen text-uniwa-gold"></i> 
+                                <strong>κα Καλλιόπη Ρηγοπούλη</strong> (Υποψήφια Διδάκτωρ)
+                            </p>
+                            <a href="https://youtu.be/Zf5HaoE0poM?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-2 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                            </a>
+                        </div>
+                        
+                        <!-- Tabs Navigation -->
+                        <div class="flex flex-wrap gap-1 bg-slate-100 p-1 rounded-xl self-start tab-navigation">
+                            <button onclick="switchTab(1, 'summary')" id="tab-1-summary" class="tab-btn-1 bg-white text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-all duration-200">
+                                <i class="fa-solid fa-file-text mr-1"></i>Περίληψη
+                            </button>
+                            <button onclick="switchTab(1, 'cv')" id="tab-1-cv" class="tab-btn-1 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-user-tie mr-1"></i>Βιογραφικό
+                            </button>
+                            <button onclick="switchTab(1, 'pdf')" id="tab-1-pdf" class="tab-btn-1 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-file-pdf mr-1 text-red-500"></i>Παρουσίαση
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB CONTENTS -->
+                    <!-- Summary Tab -->
+                    <div id="content-1-summary" class="speech-content-1 text-slate-600 text-sm leading-relaxed space-y-4">
+                        <p>
+                            Η παρούσα εισήγηση παρουσιάζει την ανάπτυξη, εφαρμογή και αξιολόγηση ενός πλαισίου επαγγελματικής ενδυνάμωσης για την καλλιέργεια της ψηφιακής δημιουργικότητας στους εκπαιδευτικούς. Η διεθνής βιβλιογραφία αναδεικνύει ένα χάσμα μεταξύ ψηφιακών εργαλείων και δημιουργικής παιδαγωγικής εφαρμογής, όπου οι τεχνολογικές καινοτομίες προηγούνται της παιδαγωγικής ετοιμότητας με αποτέλεσμα να μην μεταφράζονται σε μετασχηματιστική μάθηση. 
+                        </p>
+                        <p>
+                            Στο πλαίσιο αυτό, ο ρόλος του εκπαιδευτικού επαναπροσδιορίζεται. Το χάσμα αναδεικνύει την απουσία ενός συνεκτικού πλαισίου που να ενοποιεί τη δημιουργικότητα, τη σχεδιαστική επάρκεια και την επαγγελματική μάθηση. Για τον σκοπό αυτό, η παρούσα έρευνα αναπτύσσει ένα τριφασικό και επαναληπτικό πλαίσιο, το οποίο αντιμετωπίζει τον εκπαιδευτικό ως «Σχεδιαστή Μαθησιακών Εμπειριών» και όχι ως απλό διεκπεραιωτή-εκτελεστή της διδασκαλίας. Μέσω Έρευνας βασισμένης στον σχεδιασμό (Design Based Research) σε τρεις κύκλους, τεκμηριώθηκε αφετέρου η ουσιαστική βελτίωση της σχεδιαστικής απόδοσης στην παραγωγή καινοτόμων μαθημάτων, και αφετέρου η ολιστική επαγγελματική ενδυνάμωση των συμμετεχόντων, αυξάνοντας τη δημιουργική τους αυτο-αποτελεσματικότητα και την εμπιστοσύνη τους στην τεχνολογία.
+                        </p>
+                        <div class="bg-uniwa-grayBg p-4 rounded-xl border-l-4 border-uniwa-gold text-xs text-uniwa-blueDark space-y-1">
+                            <span class="font-extrabold uppercase block text-[10px] tracking-wider text-uniwa-goldDark">Λέξεις-κλειδιά:</span>
+                            <p class="italic">Ψηφιακή δημιουργικότητα, Επαγγελματική ενδυνάμωση, Σχεδιαστής Μαθησιακών Εμπειριών, Έρευνα Βασισμένη στον Σχεδιασμό (DBR), Σχεδιαστική επάρκεια, Δημιουργική αυτο-αποτελεσματικότητα</p>
+                        </div>
+                    </div>
+
+                    <!-- CV Tab -->
+                    <div id="content-1-cv" class="speech-content-1 hidden text-slate-600 text-sm leading-relaxed space-y-3 bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-uniwa-blueDark text-xs uppercase tracking-wider mb-2">Σύντομο Βιογραφικό Σημείωμα</h4>
+                        <p>
+                            Η Καλλιόπη Ρηγοπούλη εκπονεί διδακτορική διατριβή στο Τμήμα Διοίκησης Επιχειρήσεων του Πανεπιστημίου Δυτικής Αττικής, με ερευνητικά ενδιαφέροντα που εστιάζουν στη δημιουργικότητα στον μαθησιακό σχεδιασμό και στις εφαρμογές της Τεχνητής Νοημοσύνης στους τομείς αυτούς. Σπούδασε Φιλοσοφία, Παιδαγωγική και Ψυχολογία στη Φιλοσοφική Σχολή του Πανεπιστημίου Αθηνών και στη συνέχεια ολοκλήρωσε το Διιδρυματικό Μεταπτυχιακό Πρόγραμμα «Εκπαιδευτική Τεχνολογία και Ανάπτυξη Ανθρώπινων Πόρων» του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών και του Πανεπιστημίου Δυτικής Αττικής. Διαθέτει δεκατρία χρόνια εμπειρίας στον χώρο της ηλεκτρονικής μάθησης, με εξειδίκευση στον σχεδιασμό μαθημάτων, τη διαχείριση πλατφορμών e-learning και την ανάπτυξη εκπαιδευτικού περιεχομένου. Έχει εργαστεί σε εκπαιδευτικά ιδρύματα και ευρωπαϊκούς οργανισμούς, όπου δραστηριοποιείται έως σήμερα.
+                        </p>
+                    </div>
+
+                    <!-- PDF Tab with Direct Google Drive Embed -->
+                    <div id="content-1-pdf" class="speech-content-1 hidden text-slate-600 text-sm leading-relaxed p-4 bg-slate-50 rounded-xl space-y-4">
+                        <div class="w-full h-[400px] sm:h-[500px] bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <iframe src="https://drive.google.com/file/d/12iHb6tABpZBPX2CEeY0lFu405p7WpOyn/preview" width="100%" height="100%" style="border: none;" allow="autoplay"></iframe>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-3">
+                            <span class="text-xs text-slate-500 font-mono">Παρουσίαση — Καλλιόπη Ρηγοπούλη</span>
+                            <div class="flex gap-2">
+                                <a href="https://drive.google.com/file/d/12iHb6tABpZBPX2CEeY0lFu405p7WpOyn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="bg-uniwa-blue text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-uniwa-blueLight transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Προβολή στο Drive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPEECH 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 card-shadow hover:border-uniwa-gold/50 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+                        <div>
+                            <span class="bg-uniwa-blue/10 text-uniwa-blue text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-md">
+                                ΟΜΙΛΙΑ 2 • Διδακτορική Διατριβή
+                            </span>
+                            <h3 class="text-lg sm:text-xl font-serif font-bold text-uniwa-blueDark mt-2">
+                                Σχεδιάζοντας Τεχνολογικά Υποστηριζόμενα Εκπαιδευτικά Σενάρια με Επίγνωση Κινδύνου
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-1 flex items-center gap-1">
+                                <i class="fa-solid fa-user-pen text-uniwa-gold"></i> 
+                                <strong>κα Αναστασία Θεμελή</strong> (Υποψήφια Διδάκτωρ)
+                            </p>
+                            <a href="https://youtu.be/w1C7hpKCS9g?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-2 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                            </a>
+                        </div>
+                        
+                        <!-- Tabs Navigation -->
+                        <div class="flex flex-wrap gap-1 bg-slate-100 p-1 rounded-xl self-start tab-navigation">
+                            <button onclick="switchTab(2, 'summary')" id="tab-2-summary" class="tab-btn-2 bg-white text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-all duration-200">
+                                <i class="fa-solid fa-file-text mr-1"></i>Περίληψη
+                            </button>
+                            <button onclick="switchTab(2, 'cv')" id="tab-2-cv" class="tab-btn-2 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-user-tie mr-1"></i>Βιογραφικό
+                            </button>
+                            <button onclick="switchTab(2, 'pdf')" id="tab-2-pdf" class="tab-btn-2 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-file-pdf mr-1 text-red-500"></i>Παρουσίαση
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB CONTENTS -->
+                    <!-- Summary Tab -->
+                    <div id="content-2-summary" class="speech-content-2 text-slate-600 text-sm leading-relaxed space-y-4">
+                        <p>
+                            Η παρούσα εισήγηση εστιάζει στην εκπαιδευτική αποτυχία ως φαινόμενο κινδύνου που μπορεί να αναλυθεί, να προβλεφθεί αλλά και να προληφθεί μέσω σχεδιαστικών παρεμβάσεων, επιχειρώντας να γεφυρώσει το χάσμα μεταξύ αναλυτικής εκπαιδευτικών δεδομένων και παιδαγωγικού σχεδιασμού. Προς τούτο, παρουσιάζεται ένα μεθοδολογικό πλαίσιο σχεδιασμού τεχνολογικά υποστηριζόμενων εκπαιδευτικών σεναρίων με επίγνωση κινδύνου.
+                        </p>
+                        <p>
+                            Ιδιαίτερη έμφαση δίνεται τόσο στη θεωρητική όσο και στην πρακτική του συμβολή, όπως αυτή αποτυπώνεται μέσα από την ανάπτυξη, την εφαρμογή και την επιχειρησιακή αξιοποίησή του. Συνολικά, η εισήγηση φιλοδοξεί να συμβάλλει στη συζήτηση για τη διαχείριση του κινδύνου της εκπαιδευτικής αποτυχίας μετατοπίζοντας το επίκεντρο από την εκ των υστέρων διάγνωση στη σχεδιαστική ενσωμάτωση. Σε αυτή την κατεύθυνση, αναδεικνύεται ο μαθησιακός σχεδιασμός ως δυναμικός μηχανισμός πρόληψης και ο ρόλος των εκπαιδευτικών ως ενεργών διαχειριστών για τη διαμόρφωση αποτελεσματικών μαθησιακών περιβαλλόντων.
+                        </p>
+                        <div class="bg-uniwa-grayBg p-4 rounded-xl border-l-4 border-uniwa-gold text-xs text-uniwa-blueDark space-y-1">
+                            <span class="font-extrabold uppercase block text-[10px] tracking-wider text-uniwa-goldDark">Λέξεις-κλειδιά:</span>
+                            <p class="italic">Εκπαιδευτικά σενάρια με επίγνωση κινδύνου, Εκπαιδευτική αποτυχία, Μαθησιακός σχεδιασμός, Αναλυτική εκπαιδευτικών δεδομένων, Διαχείριση κινδύνου, Τεχνολογικά υποστηριζόμενη μάθηση</p>
+                        </div>
+                    </div>
+
+                    <!-- CV Tab -->
+                    <div id="content-2-cv" class="speech-content-2 hidden text-slate-600 text-sm leading-relaxed space-y-3 bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-uniwa-blueDark text-xs uppercase tracking-wider mb-2">Σύντομο Βιογραφικό Σημείωμα</h4>
+                        <p>
+                            Η Αναστασία Θεμελή είναι απόφοιτος του Παιδαγωγικού Τμήματος Δημοτικής Εκπαίδευσης του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών και κάτοχος μεταπτυχιακού τίτλου από το Διιδρυματικό Πρόγραμμα «Εκπαιδευτική Τεχνολογία και Ανάπτυξη Ανθρώπινων Πόρων» του ΕΚΠΑ και του Πανεπιστημίου Δυτικής Αττικής, όπου εκπονεί και τη διδακτορική της διατριβή. Τα ερευνητικά της ενδιαφέροντα εστιάζουν στον μαθησιακό σχεδιασμό, την αναλυτική εκπαιδευτικών δεδομένων και τη διαχείριση κινδύνου στην εκπαίδευση. Στο πλαίσιο των σπουδών και της επαγγελματικής της ανάπτυξης, έχει αποκτήσει πιστοποιήσεις στο Moodle (Moodle Educator Certificates), στο Instructional Design with Orchestration Graphs (École Polytechnique Fédérale de Lausanne μέσω edX) και στην Εκπαίδευση Ενηλίκων (Εκπαιδευτική Επάρκεια Εκπαιδευτή Ενηλίκων Μη Τυπικής Εκπαίδευσης από τον ΕΟΠΠΕΠ). Εργάζεται ως εκπαιδευτικός στην Πρωτοβάθμια Εκπαίδευση από το 2011 και είναι μέλος της Παιδαγωγικής Εταιρείας Ελλάδος από το 2017.
+                        </p>
+                    </div>
+
+                    <!-- PDF Tab with Direct Google Drive Embed -->
+                    <div id="content-2-pdf" class="speech-content-2 hidden text-slate-600 text-sm leading-relaxed p-4 bg-slate-50 rounded-xl space-y-4">
+                        <div class="w-full h-[400px] sm:h-[500px] bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <iframe src="https://drive.google.com/file/d/12RU46JM8CgawKUnLrozsEXoLZyVTYB3_/preview" width="100%" height="100%" style="border: none;" allow="autoplay"></iframe>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-3">
+                            <span class="text-xs text-slate-500 font-mono">Παρουσίαση — Αναστασία Θεμελή</span>
+                            <div class="flex gap-2">
+                                <a href="https://drive.google.com/file/d/12RU46JM8CgawKUnLrozsEXoLZyVTYB3_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="bg-uniwa-blue text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-uniwa-blueLight transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Προβολή στο Drive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPEECH 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 card-shadow hover:border-uniwa-gold/50 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+                        <div>
+                            <span class="bg-uniwa-blue/10 text-uniwa-blue text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-md">
+                                ΟΜΙΛΙΑ 3 • Μεταδιδακτορική Έρευνα
+                            </span>
+                            <h3 class="text-lg sm:text-xl font-serif font-bold text-uniwa-blueDark mt-2">
+                                Διερεύνηση Αποτελεσματικότητας Βιωματικών Συνεδριών σε Διδασκαλία Εγκάρσιων Δεξιοτήτων
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-1 flex items-center gap-1">
+                                <i class="fa-solid fa-user-pen text-uniwa-gold"></i> 
+                                <strong>κα Γεωργία Πουλημενάκου</strong> (Μεταδιδακτορική Ερευνήτρια)
+                            </p>
+                            <a href="https://youtu.be/XYcwsh_oHYM?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-2 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                            </a>
+                        </div>
+                        
+                        <!-- Tabs Navigation -->
+                        <div class="flex flex-wrap gap-1 bg-slate-100 p-1 rounded-xl self-start tab-navigation">
+                            <button onclick="switchTab(3, 'summary')" id="tab-3-summary" class="tab-btn-3 bg-white text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-all duration-200">
+                                <i class="fa-solid fa-file-text mr-1"></i>Περίληψη
+                            </button>
+                            <button onclick="switchTab(3, 'cv')" id="tab-3-cv" class="tab-btn-3 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-user-tie mr-1"></i>Βιογραφικό
+                            </button>
+                            <button onclick="switchTab(3, 'pdf')" id="tab-3-pdf" class="tab-btn-3 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-file-pdf mr-1 text-red-500"></i>Παρουσίαση
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB CONTENTS -->
+                    <!-- Summary Tab -->
+                    <div id="content-3-summary" class="speech-content-3 text-slate-600 text-sm leading-relaxed space-y-4">
+                        <p>
+                            Η σύγχρονη κοινωνικοοικονομική πολυπλοκότητα καθιστά τις εγκάρσιες δεξιότητες κεντρικό πυλώνα της ανώτατης εκπαίδευσης. Η παρούσα έρευνα διερευνά ένα συνθετικό πλαίσιο που συνδυάζει τη βιωματική μάθηση, τη μετασχηματίζουσα προσέγγιση και την αξιοποίηση της τέχνης. 
+                        </p>
+                        <p>
+                            Μέσω μιας φοιτητοκεντρικής προσέγγισης, η μελέτη αξιολογεί πολυφασικές παρεμβάσεις που περιλαμβάνουν τη χρήση ψηφιακής εκπαίδευσης και ασύγχρονων μαθημάτων MOOC. Τα ευρήματα, προερχόμενα από ποιοτική ανάλυση ομάδων εστίασης, καταδεικνύουν ότι η ανάπτυξη κοινωνικών ικανοτήτων προκύπτει από τη δυναμική αλληλεπίδραση της αυθεντικής εφαρμογής και του αναστοχασμού, ενισχύοντας τη μεταγνώση και την επαγγελματική ταυτότητα των εκπαιδευόμενων. Η έρευνα προτείνει ένα πολυτροπικό μοντέλο που υπερβαίνει τις αποσπασματικές προσεγγίσεις, αναδεικνύοντας τον ολοκληρωμένο εκπαιδευτικό σχεδιασμό ως απαραίτητο μηχανισμό γεφύρωσης μεταξύ ακαδημαϊκής προετοιμασίας και σύγχρονων επαγγελματικών απαιτήσεων.
+                        </p>
+                        <div class="bg-uniwa-grayBg p-4 rounded-xl border-l-4 border-uniwa-gold text-xs text-uniwa-blueDark space-y-1">
+                            <span class="font-extrabold uppercase block text-[10px] tracking-wider text-uniwa-goldDark">Λέξεις-κλειδιά:</span>
+                            <p class="italic">Βιωματική μάθηση, εγκάρσιες δεξιότητες, φοιτητοκεντρική προσέγγιση, ψηφιακή εκπαίδευση, MOOC, μεταγνώση</p>
+                        </div>
+                    </div>
+
+                    <!-- CV Tab -->
+                    <div id="content-3-cv" class="speech-content-3 hidden text-slate-600 text-sm leading-relaxed space-y-3 bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-uniwa-blueDark text-xs uppercase tracking-wider mb-2">Σύντομο Βιογραφικό Σημείωμα</h4>
+                        <p>
+                            Η Γεωργία Πουλημενάκου είναι μεταδιδακτορική ερευνήτρια στο Τμήμα Διοίκησης Επιχειρήσεων του Πανεπιστημίου Δυτικής Αττικής, από όπου απέκτησε και τον διδακτορικό της τίτλο. Η διδακτορική της διατριβή εστίασε στην αξιοποίηση της τέχνης στη βιωματική μάθηση λειτουργών υγείας και στη βελτίωση της ποιότητας της φροντίδας υγείας, ενώ κατέχει και μεταπτυχιακή εξειδίκευση στη Διοίκηση και Διαχείριση Υπηρεσιών Υγείας και Κοινωνικής Φροντίδας από το ίδιο ίδρυμα. Η μεταδιδακτορική της έρευνα και το ευρύτερο ερευνητικό της έργο επικεντρώνονται στην ανάπτυξη κοινωνικών και εγκάρσιων δεξιοτήτων μέσω καινοτόμων μεθόδων δημιουργικής διδασκαλίας και ψηφιακών περιβαλλόντων μάθησης. Είναι πτυχιούχος Νοσηλευτικής από το Τμήμα Νοσηλευτικής της Σχολής Επαγγελμάτων Υγείας του Τεχνολογικού Εκπαιδευτικού Ιδρύματος Κρήτης. Σήμερα κατέχει τη θέση της Τομεάρχη Νοσηλευτικής Υπηρεσίας στο Γενικό Νοσοκομείο «Ασκληπιείο» Βούλας.
+                        </p>
+                    </div>
+
+                    <!-- PDF Tab with Direct Google Drive Embed -->
+                    <div id="content-3-pdf" class="speech-content-3 hidden text-slate-600 text-sm leading-relaxed p-4 bg-slate-50 rounded-xl space-y-4">
+                        <div class="w-full h-[400px] sm:h-[500px] bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <iframe src="https://drive.google.com/file/d/1AoS_srezLOPnWquidleKl-zK1wWLurTB/preview" width="100%" height="100%" style="border: none;" allow="autoplay"></iframe>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-3">
+                            <span class="text-xs text-slate-500 font-mono">Παρουσίαση — Γεωργία Πουλημενάκου</span>
+                            <div class="flex gap-2">
+                                <a href="https://drive.google.com/file/d/1AoS_srezLOPnWquidleKl-zK1wWLurTB/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="bg-uniwa-blue text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-uniwa-blueLight transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Προβολή στο Drive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SPEECH 4 -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 card-shadow hover:border-uniwa-gold/50 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-6">
+                        <div>
+                            <span class="bg-uniwa-blue/10 text-uniwa-blue text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-md">
+                                ΟΜΙΛΙΑ 4 • Μεταδιδακτορική Έρευνα
+                            </span>
+                            <h3 class="text-lg sm:text-xl font-serif font-bold text-uniwa-blueDark mt-2">
+                                Εκπαιδεύοντας τους Εκπαιδευτές Επαγγελματικής Εκπαίδευσης & Κατάρτισης
+                            </h3>
+                            <p class="text-xs text-slate-600 mt-1 flex items-center gap-1">
+                                <i class="fa-solid fa-user-pen text-uniwa-gold"></i> 
+                                <strong>κ. Δημήτριος Κοτσιφάκος</strong> (Μεταδιδακτορικός Ερευνητής)
+                            </p>
+                            <a href="https://youtu.be/NDpH8e3H4EU?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 mt-2 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                            </a>
+                        </div>
+                        
+                        <!-- Tabs Navigation -->
+                        <div class="flex flex-wrap gap-1 bg-slate-100 p-1 rounded-xl self-start tab-navigation">
+                            <button onclick="switchTab(4, 'summary')" id="tab-4-summary" class="tab-btn-4 bg-white text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-all duration-200">
+                                <i class="fa-solid fa-file-text mr-1"></i>Περίληψη
+                            </button>
+                            <button onclick="switchTab(4, 'cv')" id="tab-4-cv" class="tab-btn-4 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-user-tie mr-1"></i>Βιογραφικό
+                            </button>
+                            <button onclick="switchTab(4, 'pdf')" id="tab-4-pdf" class="tab-btn-4 text-slate-500 hover:text-uniwa-blueDark text-xs font-bold px-3 py-1.5 rounded-lg transition-all duration-200">
+                                <i class="fa-solid fa-file-pdf mr-1 text-red-500"></i>Παρουσίαση
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB CONTENTS -->
+                    <!-- Summary Tab -->
+                    <div id="content-4-summary" class="speech-content-4 text-slate-600 text-sm leading-relaxed space-y-4">
+                        <p>
+                            Η παρούσα εισήγηση αναδεικνύει τη σημασία του παιδαγωγικού και διδακτικού σχεδιασμού προγραμμάτων Επαγγελματικής Εκπαίδευσης και Κατάρτισης, όπως αυτά ενσωματώνονται σε σύγχρονα ψηφιακά εργαλεία και προηγμένες διδακτικές μεθοδολογίες. Ως προς το περιεχόμενο, η εισήγηση εστιάζει στις επιστημονικές εισηγήσεις της τελευταίας χρονιάς που αφορούν την εκπαίδευση εκπαιδευτών στην Επαγγελματική Εκπαίδευση και Κατάρτιση, δίνοντας ιδιαίτερη έμφαση σε πλαίσια που προάγουν την καλλιέργεια ψηφιακών δεξιοτήτων. 
+                        </p>
+                        <p>
+                            Οι αναφορές δίνουν ιδιαίτερη έμφαση στην ενδυνάμωση των εκπαιδευτών, ώστε να ανταποκρίνονται στις απαιτήσεις της ψηφιακής εποχής και στις ανάγκες των εκπαιδευομένων. Παράλληλα, προτείνονται στρατηγικές για βιώσιμη επαγγελματική ανάπτυξη, ενίσχυση της ποιότητας κατάρτισης και προσαρμογή των οργανισμών Επαγγελματικής Εκπαίδευσης και Κατάρτισης, που υποστηρίζονται από τα Εργαστηριακά Κέντρα, σε δυναμικά εκπαιδευτικά περιβάλλοντα.
+                        </p>
+                        <div class="bg-uniwa-grayBg p-4 rounded-xl border-l-4 border-uniwa-gold text-xs text-uniwa-blueDark space-y-1">
+                            <span class="font-extrabold uppercase block text-[10px] tracking-wider text-uniwa-goldDark">Λέξεις-κλειδιά:</span>
+                            <p class="italic">Επαγγελματική Εκπαίδευση και Κατάρτιση, Εκπαίδευση εκπαιδευτών, Ψηφιακές δεξιότητες, Βιώσιμη επαγγελματική ανάπτυξη, Εργαστηριακά Κέντρα</p>
+                        </div>
+                    </div>
+
+                    <!-- CV Tab -->
+                    <div id="content-4-cv" class="speech-content-4 hidden text-slate-600 text-sm leading-relaxed space-y-3 bg-slate-50 p-5 rounded-xl border border-slate-200">
+                        <h4 class="font-bold text-uniwa-blueDark text-xs uppercase tracking-wider mb-2">Σύντομο Βιογραφικό Σημείωμα</h4>
+                        <p>
+                            Ο Δημήτριος Κοτσιφάκος είναι μεταδιδακτορικός ερευνητής στο Τμήμα Διοίκησης Επιχειρήσεων του Πανεπιστημίου Δυτικής Αττικής. Έχει ολοκληρώσει την πρώτη του μεταδιδακτορική έρευνα στο Τμήμα Πληροφορικής του Πανεπιστημίου Πειραιώς, όπου εκπόνησε και τη διδακτορική του διατριβή. Η μεταδιδακτορική του έρευνα, οι διδακτορικές του σπουδές και το συνολικό ερευνητικό του έργο επικεντρώνονται σε ζητήματα που σχετίζονται με την Επαγγελματική Εκπαίδευση και Κατάρτιση (ΕΕΚ). Είναι πτυχιούχος Ηλεκτρονικός Μηχανικός της Σχολής Τεχνολογικών Εφαρμογών του Ανώτατου Τεχνολογικού Εκπαιδευτικού Ιδρύματος Αθήνας. Σήμερα διατελεί Διευθυντής του 1ου Εργαστηριακού Κέντρου Αγίου Δημητρίου (Μπραχάμι) στην Αθήνα.
+                        </p>
+                    </div>
+
+                    <!-- PDF Tab with Direct Google Drive Embed -->
+                    <div id="content-4-pdf" class="speech-content-4 hidden text-slate-600 text-sm leading-relaxed p-4 bg-slate-50 rounded-xl space-y-4">
+                        <div class="w-full h-[400px] sm:h-[500px] bg-slate-200 rounded-lg overflow-hidden border border-slate-200">
+                            <iframe src="https://drive.google.com/file/d/1GUkF25YxY-qzMHUPM35BgQj-XqIHnPi9/preview" width="100%" height="100%" style="border: none;" allow="autoplay"></iframe>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 pt-3">
+                            <span class="text-xs text-slate-500 font-mono">Παρουσίαση — Δημήτριος Κοτσιφάκος</span>
+                            <div class="flex gap-2">
+                                <a href="https://drive.google.com/file/d/1GUkF25YxY-qzMHUPM35BgQj-XqIHnPi9/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="bg-uniwa-blue text-white px-4 py-2 rounded-lg text-xs font-semibold hover:bg-uniwa-blueLight transition-all flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Προβολή στο Drive
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Press Release Document Section -->
+    <section id="official" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-slate-50 rounded-2xl p-6 sm:p-10 shadow-md border border-slate-200/80 print-container">
+                <div class="flex flex-col sm:flex-row items-center justify-between border-b-2 border-uniwa-gold pb-6 mb-8 gap-4">
+                    <div>
+                        <span class="text-uniwa-blue font-serif text-xs font-bold uppercase tracking-widest block mb-1">ΠΑΝΕΠΙΣΤΗΜΙΟ ΔΥΤΙΚΗΣ ΑΤΤΙΚΗΣ</span>
+                        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-uniwa-blueDark">ΔΕΛΤΙΟ ΤΥΠΟΥ</h2>
+                    </div>
+                    <div class="flex gap-2 no-print">
+                        <button onclick="copyPressRelease()" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2 transition-all">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>Αντιγραφή</span>
+                        </button>
+                        <button onclick="window.print()" class="bg-uniwa-blue hover:bg-uniwa-blueLight text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2 transition-all shadow-md">
+                            <i class="fa-solid fa-print"></i>
+                            <span>Εκτύπωση</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Complete Document Body -->
+                <div id="pressReleaseBody" class="prose max-w-none text-slate-700 space-y-6 text-sm sm:text-base leading-relaxed">
+                    <div class="text-center font-bold text-uniwa-blueDark font-serif text-lg sm:text-xl mb-6 leading-snug">
+                        Η Ώρα του Ερευνητή: Σχεδιασμός Εμπειριών Μάθησης και Καινοτομία<br>
+                        <span class="text-xs font-sans font-semibold text-slate-500 block mt-2.5 uppercase tracking-wide">Σχολή Διοικητικών, Οικονομικών και Κοινωνικών Επιστημών</span>
+                    </div>
+
+                    <p>
+                        Με απόλυτη επιτυχία και ευρεία συμμετοχή πραγματοποιήθηκε η δεύτερη συνάντηση της πρωτοβουλίας «Η Ώρα του Ερευνητή», μιας δράσης της Σχολής Διοικητικών, Οικονομικών και Κοινωνικών Επιστημών. Η συγκεκριμένη πρωτοβουλία εξυπηρετεί τον στρατηγικό στόχο της δημιουργίας ενός ανοιχτού πανεπιστημίου και ενός υποστηρικτικού ακαδημαϊκού περιβάλλοντος, όπου προάγεται ο επιστημονικός διάλογος, η ανταλλαγή ιδεών και η ανάπτυξη νέων συνεργασιών.
+                    </p>
+
+                    <p>
+                        Αποτελεί κεντρική προτεραιότητα της Σχολής να δοθεί βήμα σε νέους ερευνητές —υποψήφιους διδάκτορες, μεταδιδάκτορες αλλά και μέλη ΔΕΠ— ώστε να προβάλουν το έργο τους και να καλλιεργηθεί ο ακαδημαϊκός διάλογος. Μετά την πρώτη υβριδική συνάντηση τον Μάρτιο, η οποία ανέδειξε τη διεπιστημονικότητα και την εξωστρέφεια της νέας έρευνας, η δεύτερη αυτή εκδήλωση εστίασε σε ένα εξαιρετικά επίκαιρο θέμα.
+                    </p>
+
+                    <h4 class="font-bold text-uniwa-blueDark font-serif text-base mt-6 border-l-4 border-uniwa-gold pl-3 uppercase tracking-wide">
+                        Το Κεντρικό Μήνυμα: «Η μάθηση δεν συμβαίνει, σχεδιάζεται»
+                    </h4>
+                    <p>
+                        Η θεματική της συνάντησης επικεντρώθηκε στην εκπαίδευση, τον εκπαιδευτικό σχεδιασμό, τις καινοτόμες προσεγγίσεις στη μάθηση και την αξιοποίηση της τεχνητής νοημοσύνης. Υπό την ακαδημαϊκή υποστήριξη του καθηγητή του Τμήματος Διοίκησης Επιχειρήσεων, κ. Ψαρομίλικου, αναδείχθηκε το νέο παράδειγμα της εκπαίδευσης στον 21ο αιώνα.
+                    </p>
+                    <p>
+                        Όπως χαρακτηριστικά τονίστηκε, ο εκπαιδευτικός παύει πλέον να είναι απλός μεταδότης γνώσης και μετατρέπεται σε «σχεδιαστή εμπειριών μάθησης», αναλαμβάνοντας τον ρόλο του αρχιτέκτονα που συνδυάζει τη σχεδιαστική ακρίβεια ενός μηχανικού με τη δημιουργικότητα ενός καλλιτέχνη. Το απόσταγμα της εκδήλωσης συμπυκνώνεται στη φράση: «Η μάθηση δεν συμβαίνει, σχεδιάζεται».
+                    </p>
+
+                    <h4 class="font-bold text-uniwa-blueDark font-serif text-base mt-6 border-l-4 border-uniwa-gold pl-3 uppercase tracking-wide">
+                        Τέσσερις Καινοτόμες Έρευνες υπό μια Ενιαία Αρχιτεκτονική
+                    </h4>
+                    <p>
+                        Την εκδήλωση συντόνισε η αναπληρώτρια καθηγήτρια κ. Κλεοπάτρα Κωνσταντουλάκη. Στο πλαίσιο του δίωρου προγράμματος παρουσιάστηκαν τέσσερις αλληλοσυμπληρούμενες έρευνες (δύο διδακτορικές και δύο μεταδιδακτορικές), οι οποίες αποτελούν «τομές» σε έναν ενιαίο αρχιτεκτονικό σχεδιασμό:
+                    </p>
+                    
+                    <ol class="list-decimal pl-5 space-y-5 text-slate-600">
+                        <li>
+                            <strong>Ψηφιακή Δημιουργικότητα και Ενδυνάμωση Εκπαιδευτικών:</strong> Στην πρώτη παρουσίαση, η κ. Πόπη Ρηγοπούλου ανέδειξε ότι η ψηφιακή δημιουργικότητα στην εκπαιδευτική διαδικασία δεν είναι ένα τυχαίο φαινόμενο, αλλά μια συνειδητή σχεδιαστική επιλογή. Παρουσιάζοντας ένα πολυεπίπεδο πλαίσιο επαγγελματικής ενδυνάμωσης, υπογράμμισε την ανάγκη μετάβασης από την απλή χρήση ψηφιακών εργαλείων στον ουσιαστικό παιδαγωγικό μετασχηματισμό. Ο απώτερος στόχος είναι ο εκπαιδευτικός να σταματήσει να είναι απλός μεταδότης γνώσης ή διαχειριστής τεχνολογιών και να μετατραπεί σε «αρχιτέκτονα» ουσιαστικών μαθησιακών εμπειριών.
+                            <div class="mt-2">
+                                <a href="https://youtu.be/Zf5HaoE0poM?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                    <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Πρόληψη της Εκπαιδευτικής Αποτυχίας και Διαχείριση Κινδύνου:</strong> Στη δεύτερη παρουσίαση, η κ. Νατάσα Θεμελή προσέγγισε την εκπαιδευτική αποτυχία ως έναν συστημικό κίνδυνο που μπορεί να προβλεφθεί και να προληφθεί κατά τη φάση του εκπαιδευτικού σχεδιασμού. Πρότεινε ένα καινοτόμο πλαίσιο μαθησιακού σχεδιασμού με «επίγνωση κινδύνου», όπου ο εκπαιδευτικός ενσωματώνει προληπτικές παρεμβάσεις βασισμένες σε αναλυτικά δεδομένα, αντί να αντιδρά εκ των υστέρων στην αποτυχία. Παράλληλα, παρουσιάστηκε το προτεινόμενο εργαλείο τεχνητής νοημοσύνης (AIRA) που λειτουργεί ως υποστηρικτικός μηχανισμός για τον εκπαιδευτικό στη λήψη αποφάσεων.
+                            <div class="mt-2">
+                                <a href="https://youtu.be/w1C7hpKCS9g?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                    <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Δημιουργική Διδασκαλία Κοινωνικών Δεξιοτήτων:</strong> Η τρίτη παρουσίαση, από την κ. Γεωργία Πουλημενάκου, εστίασε στη ζωτική σημασία των κοινωνικοσυναισθηματικών δεξιοτήτων, σημειώνοντας πως στην εποχή της 4ης Βιομηχανικής Επανάστασης, οι μέχρι πρότινος «ήπιες» δεξιότητες αποτελούν πλέον τις απόλυτες «σκληρές» δεξιότητες του μέλλοντος. Μέσα από πρακτικές βιωματικής μάθησης και παιχνίδια ρόλων, τονίστηκε η ανάγκη καλλιέργειας της ενσυναίσθησης, της κριτικής σκέψης και της ηγετικότητας για τους μελλοντικούς επαγγελματίες. Το κεντρικό συμπέρασμα ήταν ότι, αν και η τεχνολογία αυτοματοποιεί τις διαδικασίες, το συγκριτικό πλεονέκτημα παραμένει η συναισθηματική νοημοσύνη του ανθρώπου.
+                            <div class="mt-2">
+                                <a href="https://youtu.be/XYcwsh_oHYM?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                    <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Ψηφιακός Μετασχηματισμός στην Επαγγελματική Εκπαίδευση και Κατάρτιση (ΕΕΚ):</strong> Στην τέταρτη ομιλία, ο κ. Δημήτρης Κοτσιφάκος ανέλυσε την πολυπλοκότητα των σύγχρονων μαθησιακών οικοσυστημάτων στον ευαίσθητο χώρο της Επαγγελματικής Εκπαίδευσης και Κατάρτισης. Εντοπίζοντας τη συστηματική έλλειψη επιμόρφωσης των εκπαιδευτών τεχνικών σχολών, πρότεινε ένα ολοκληρωμένο πλαίσιο ανάπτυξης ψηφιακών δεξιοτήτων. Όπως χαρακτηριστικά επισήμανε, ο ουσιαστικός ψηφιακός μετασχηματισμός στον χώρο της κατάρτισης δεν εξαρτάται από τον ίδιο τον τεχνολογικό εξοπλισμό, αλλά από την κατάλληλη εκπαίδευση και ενδυνάμωση εκείνων που σχεδιάζουν τη μάθηση.
+                            <div class="mt-2">
+                                <a href="https://youtu.be/NDpH8e3H4EU?list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-red-600 hover:text-red-700 font-semibold text-xs transition-colors">
+                                    <i class="fa-brands fa-youtube text-base"></i> Παρακολουθήστε την ομιλία στο κανάλι του Κέντρου Διδασκαλίας &amp; Μάθησης του ΠΑΔΑ στο YouTube
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                    
+                    <div class="bg-slate-100 border border-slate-200 rounded-xl p-4 flex items-center gap-3 mt-2">
+                        <i class="fa-brands fa-youtube text-red-600 text-2xl flex-shrink-0"></i>
+                        <div>
+                            <p class="text-xs font-bold text-slate-700">Ολόκληρη η εκδήλωση στο YouTube</p>
+                            <a href="https://www.youtube.com/watch?v=AweR3qKiLzQ&list=PLs9FuY4sHe2alWB01Iw2moHCMsX8vwFNO" target="_blank" rel="noopener noreferrer" class="text-xs text-red-600 hover:text-red-700 font-semibold transition-colors">
+                                Κανάλι Κέντρου Διδασκαλίας και Μάθησης — Δείτε το πλήρες playlist →
+                            </a>
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold text-uniwa-blueDark font-serif text-base mt-6 border-l-4 border-uniwa-gold pl-3 uppercase tracking-wide">
+                        Ένας Ζωντανός Θεσμός
+                    </h4>
+                    <p>
+                        Η εκδήλωση έδωσε την ευκαιρία στους συμμετέχοντες (μέλη ΔΕΠ, ερευνητές και φοιτητές) να εμπλακούν σε έναν ουσιαστικό διάλογο σχετικά με την ανθρωπολογική και παιδαγωγική διάσταση της ψηφιακής τεχνολογίας.
+                    </p>
+                    <p>
+                        Η «Ώρα του Ερευνητή» συνεχίζει δυναμικά την πορεία της, φιλοδοξώντας να καθιερωθεί ως ένας μόνιμος, ζωντανός θεσμός επιστημονικής αριστείας και ανταλλαγής ιδεών στους κόλπους του Πανεπιστημίου.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIERRAKOS MODAL -->
+    <div id="modal-pierrakos" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden border border-uniwa-gold/40 animate-fade-in">
+            <div class="uniwa-gradient text-white p-5 flex items-center justify-between border-b border-uniwa-gold/20">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-building-columns text-uniwa-gold text-lg"></i>
+                    <div>
+                        <h3 class="font-serif font-bold text-base leading-tight">Κοσμήτορας κ. Γεώργιος Πιερράκος</h3>
+                        <p class="text-[10px] text-uniwa-gold font-bold uppercase tracking-wider">Πλήρες κείμενο χαιρετισμού</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('pierrakos')" class="text-white hover:text-uniwa-gold transition-colors p-1.5 rounded-lg hover:bg-white/10">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto text-slate-700 text-sm leading-relaxed space-y-4">
+                <p>«Αγαπητοί συνάδελφοι, αγαπητοί ερευνητές και φοιτητές μας, σας καλωσορίζουμε σήμερα πάλι με χαρά, όπως και την πρώτη φορά, στη δεύτερη συνάντηση της Ώρας του Ερευνητή της Σχολής μας, της Σχολής Διοικητικών, Οικονομικών και Κοινωνικών Επιστημών. Είναι μία πρωτοβουλία η οποία συνεχίζει τον στόχο που έχουμε θέσει: ένα ανοιχτό πανεπιστήμιο και ανοιχτό επιστημονικό διάλογο μέσα στη Σχολή μας. Σκοπός είναι οι ερευνητές μας να έχουν έναν χώρο να μπορούν να παρουσιάσουν τη δουλειά τους, να υπάρχει ένα πεδίο ανταλλαγής ιδεών, να δοκιμάζουμε σκέψεις, να μπορούμε να αναπτύξουμε συνεργασίες και έτσι να δημιουργείται ένα υποστηρικτικό ακαδημαϊκό περιβάλλον. Αυτός είναι ο στόχος της Ώρας του Ερευνητή, την οποία με πολύ μεγάλο μεράκι ξεκίνησε η ομάδα των συνεργατών μας, και όλοι ως ομάδα σιγά-σιγά προχωρούμε σε αυτή την πρωτοβουλία.»</p>
+                <p>«Η πρώτη συνάντηση πραγματοποιήθηκε υβριδικά τον Μάρτιο και εκεί διαπιστώθηκε η ανάγκη να συνεχιστούν αυτές οι πρωτοβουλίες, ενώ παράλληλα αναδείχθηκε η δυναμική, η διεπιστημονικότητα και η εξωστρέφεια που υπάρχει στο πεδίο της νέας έρευνας. Η σημερινή θεματική αποτελεί μια επιπλέον ευκαιρία να δούμε κάτι ειδικό όσον αφορά την εκπαίδευση, τον εκπαιδευτικό σχεδιασμό, τη δημιουργικότητα και τις καινοτόμες προσεγγίσεις ως προς τη μάθηση. Καλούμαστε να δούμε πώς συνδέονται αυτές οι αλλαγές με το επιχειρηματικό πεδίο και τελικά να αναρωτηθούμε αν η εκπαίδευση έχει σήμερα ειδική θέση σε αυτό που ονομάζουμε πυλώνα της κοινωνίας και της αγοράς εργασίας.»</p>
+                <p>«Ειδική αναφορά κάνουμε στην τεχνολογία και την αξιοποίηση της τεχνητής νοημοσύνης. Ζήσαμε και ζούμε καθημερινά την αγωνία για το πώς θα αξιοποιήσουμε ή πώς θα μας φοβίσει η τεχνητή νοημοσύνη. Καθώς μπαίνουμε σε νέα μαθησιακά περιβάλλοντα, υπάρχει η ανάγκη να αναπτύξουμε γρήγορα δημιουργικές και κοινωνικές δεξιότητες, διαμορφώνοντας σιγά-σιγά μια νέα εκπαιδευτική διαδικασία και επαγγελματική ανάπτυξη.»</p>
+                <p>«Θα ήθελα να τονίσω ειδικά για τη Σχολή μας ότι η στήριξη των νέων ερευνητών αποτελεί σημαντική στρατηγική προτεραιότητα. Γι' αυτό, η σημερινή δραστηριότητα δεν έχει μόνο αξιολογική θέση, αλλά είναι κυρίως ένα βήμα που δίνουμε σε νέους ερευνητές, υποψήφιους διδάκτορες, ώριμους ερευνητές, μεταδιδάκτορες, ακόμα και μέλη ΔΕΠ. Στόχος μας είναι η συνεργασία και η καλλιέργεια του ακαδημαϊκού διαλόγου. Αυτό είναι το πεδίο το οποίο δίνει στον καθένα την ευκαιρία να προβάλει το έργο και τις απόψεις του.»</p>
+                <p>«Σήμερα έχουμε τέσσερις προσεγγίσεις. Ο χρόνος θα τηρείται αυστηρά στο δίωρο για παιδαγωγικούς λόγους, ώστε να μπορούμε σύντομα και περιεκτικά να παρουσιάσουμε τις θεματολογίες. Επειδή η θεματολογία αποτελεί μια κοινή επιστημονική ενότητα, αυτό θα βοηθήσει σε μια ουσιαστική συζήτηση με συνοχή σε όλο αυτό.»</p>
+                <p>«Θέλω να ευχαριστήσω πολύ τον καθηγητή κ. Ψαρομήλιγκο για την ακαδημαϊκή υποστήριξη, τη συνολική συμβολή του στην προσπάθεια αυτή και τον συντονισμό των ερευνητών. Επίσης, κλείνοντας, ευχαριστώ ιδιαίτερα τη συντονίστρια της σημερινής συνάντησης, την αναπληρώτρια καθηγήτρια κ. Κλεοπάτρα Κωνσταντουλάκη, η οποία παρά τον φόρτο εργασίας της συμβάλλει πραγματικά στην οργάνωση της δράσης, καθώς και όλους τους συμμετέχοντες ερευνητές, τα μέλη και τους φοιτητές μας που στηρίζουν αυτή την προσπάθεια.»</p>
+                <p class="font-serif italic text-uniwa-blue font-semibold">«Εύχομαι καλή επιτυχία στη σημερινή συνάντηση και η "Ώρα του Ερευνητή" να εξελιχθεί και να διαρκέσει ζωντανά ως θεσμός επιστημονικής ανταλλαγής ιδεών στη Σχολή και στο Πανεπιστήμιό μας.»</p>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-200 flex justify-end">
+                <button onclick="closeModal('pierrakos')" class="bg-uniwa-blue text-white px-5 py-2 rounded-xl text-xs font-bold hover:bg-uniwa-blueLight transition-all">Κλείσιμο</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PSAROMILIGKOS MODAL -->
+    <div id="modal-psaromiligkos" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden border border-uniwa-gold/40 animate-fade-in">
+            <div class="uniwa-gradient text-white p-5 flex items-center justify-between border-b border-uniwa-gold/20">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-microscope text-uniwa-gold text-lg"></i>
+                    <div>
+                        <h3 class="font-serif font-bold text-base leading-tight">Καθηγητής κ. Ιωάννης Ψαρομήλιγκος</h3>
+                        <p class="text-[10px] text-uniwa-gold font-bold uppercase tracking-wider">Πλήρες κείμενο προλόγου</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('psaromiligkos')" class="text-white hover:text-uniwa-gold transition-colors p-1.5 rounded-lg hover:bg-white/10">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto text-slate-700 text-sm leading-relaxed space-y-4">
+                <p>«Κυρίες και κύριοι,</p>
+                <p>Όλοι θυμόμαστε έναν δάσκαλο που μας σημάδεψε. Αλλά σπάνια αναρωτιόμαστε: τι ακριβώς έκανε εκείνος ο άνθρωπος που οι άλλοι δεν έκαναν;</p>
+                <p>Τώρα θα μου πείτε οι περισσότεροι ότι «ξέρεις, είχε το χάρισμα». Δεν θεωρώ αυτή την απάντηση σωστή, ή τουλάχιστον θα σας δείξουμε μια άλλη άποψη. Η απάντηση για αυτό που έκανε αυτός ο άνθρωπος, είναι ότι σχεδίαζε με πρόθεση αυτό που εμείς βιώναμε ως εμπειρία. Άρα ήταν αυτό που λέμε, και αυτό που λέει η βιβλιογραφία σήμερα: Σχεδιαστής εμπειριών μάθησης. Είναι ο νέος ρόλος του εκπαιδευτικού στον 21ο αιώνα. Τέρμα ο μεταδότης γνώσης. Είναι ο σχεδιαστής εμπειριών μάθησης.»</p>
+                <p>«Αυτός ο νέος ρόλος ορίζεται από δύο άξονες που φαινομενικά αντιτίθενται, αλλά στην πράξη αλληλοτροφοδοτούνται: η Ακρίβεια του Μηχανικού και η Δημιουργικότητα του Καλλιτέχνη.»</p>
+                <p class="font-bold border-l-4 border-uniwa-gold pl-3 my-4">«Οι τέσσερις εργασίες που θα παρουσιαστούν σήμερα δεν είναι τέσσερις ξεχωριστές έρευνες. Είναι τέσσερις τομές σε έναν ενιαίο αρχιτεκτονικό σχεδιασμό.»</p>
+                <p>«Η 1η εργασία θέτει το θεμέλιο: η ψηφιακή δημιουργικότητα ΔΕΝ είναι τυχαίο φαινόμενο. Δεν "συμβαίνει" σε μια τάξη που τυχαία έχει καλό κλίμα. Είναι σχεδιαστική επιλογή — μετρήσιμη, διδάξιμη, επαναλήψιμη. Ο εκπαιδευτικός που ενδυναμώνεται γίνεται αρχιτέκτονας μαθησιακών εμπειριών. Κι αυτό το "γίνεται" δεν είναι θέμα ταλέντου ή χαρίσματος. Είναι θέμα σχεδιασμού.»</p>
+                <p>«Η 2η εργασία φέρνει την ακρίβεια του μηχανικού: ο κίνδυνος εκπαιδευτικής αποτυχίας δεν διαγιγνώσκεται εκ των υστέρων. Ενσωματώνεται προληπτικά στον ίδιο τον σχεδιασμό της μάθησης. Εδώ η αναλυτική δεδομένων, η εξόρυξη γνώσης, η προγνωστική αναλυτική αποκτούν επιτέλους παιδαγωγικό νόημα — γιατί συνδέονται με συγκεκριμένες παρεμβάσεις, πριν η αποτυχία γίνει γεγονός. Η εκπαιδευτική αποτυχία μοιάζει με παγόβουνο. Ό,τι φαίνεται στην επιφάνεια δεν είναι το πρόβλημα. Το πρόβλημα είναι αυτό που δεν φαίνεται ακόμα.»</p>
+                <p>«Η 3η εργασία ξεφεύγει από τα καθιερωμένα — και σκόπιμα. Γιατί τολμά να κάνει αυτό που η ακαδημαϊκή κοινότητα συχνά αποφεύγει: να μπει στην αίθουσα με το σώμα, τη φωνή, την τέχνη και το συναίσθημα. Και να το μετρήσει. Για χρόνια, δεξιότητες όπως η ενσυναίσθηση, η ενεργητική ακρόαση, η διεκδικητικότητα, η συνοχή της ομάδας, αντιμετωπίζονταν ως "ήπιες" — κι αυτή η λέξη ήταν πάντα μια ευγενική υποτίμηση. "Ήπιο" σήμαινε: δευτερεύον, αμέτρητο, μη επιστημονικό. Κάτι που γίνεται αν περισσέψει χρόνος. Η Βιομηχανική επανάσταση 4.0 έκανε αυτή την αντίληψη εντελώς παρωχημένη. Όταν η τεχνητή νοημοσύνη αυτοματοποιεί τις γνωστικές ρουτίνες, αυτό που απομένει αποκλειστικά ανθρώπινο — η ικανότητα να συνεργαστείς, να διαπραγματευτείς, να εμπνεύσεις, να αντέξεις στην αβεβαιότητα — γίνεται το νέο συγκριτικό πλεονέκτημα. Οι "ήπιες" δεξιότητες μετατρέπονται, όπως το θέτει η εργασία, στις σκληρές δεξιότητες του μέλλοντος. Και η ερευνητική πρόταση εδώ είναι τολμηρή: δεν αρκεί να μιλάμε για αυτές τις δεξιότητες. Πρέπει να τις σχεδιάζουμε βιωματικά — με παιχνίδια ρόλων, με ανάλυση έργων τέχνης, με αφήγηση, με το σώμα ως εργαλείο μάθησης. Γιατί η ενσυναίσθηση δεν διδάσκεται με διαφάνεια PowerPoint. Κατακτάται με εμπειρία.»</p>
+                <p>«Και η 4η εργασία "Εκπαιδεύοντας τους Εκπαιδευτές Επαγγελματικής Εκπαίδευσης & Κατάρτισης: Ανάπτυξη Πλαισίου Καλλιέργειας Ψηφιακών Δεξιοτήτων στο Σχεδιασμό Προγραμμάτων Οργανισμών ΕΕΚ" … αγγίζει έναν χώρο που παρεξηγείται συστηματικά. Η εργασία αυτή ολοκληρώνει την εικόνα: ο ψηφιακός μετασχηματισμός της Επαγγελματικής Εκπαίδευσης και Κατάρτισης δεν εξαρτάται από την τεχνολογία. Εξαρτάται από το πώς εκπαιδεύουμε αυτούς που σχεδιάζουν τη μάθηση. Αν ο σχεδιαστής δεν έχει ενδυναμωθεί, κανένα εργαλείο δεν σώζει το αποτέλεσμα.»</p>
+                <p class="font-serif italic text-uniwa-blue font-semibold">«Τέσσερις εργασίες. Ένα κοινό μήνυμα: Η μάθηση δεν συμβαίνει. Σχεδιάζεται. Και ο εκπαιδευτικός που την σχεδιάζει χρειάζεται και τα δύο: την ακρίβεια που μετράει, προλαμβάνει και τεκμηριώνει — και τη δημιουργικότητα που εμπνέει, μετασχηματίζει και ανθρωποποιεί. Καλωσορίσατε στις παρουσιάσεις.»</p>
+            </div>
+            <div class="bg-slate-50 p-4 border-t border-slate-200 flex justify-end">
+                <button onclick="closeModal('psaromiligkos')" class="bg-uniwa-blue text-white px-5 py-2 rounded-xl text-xs font-bold hover:bg-uniwa-blueLight transition-all">Κλείσιμο</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Toast Alert Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-uniwa-blueDark text-white px-5 py-3.5 rounded-xl shadow-2xl border border-uniwa-gold/40 z-50 flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-uniwa-gold text-lg"></i>
+        <span id="toastMessage" class="text-xs font-semibold">Το κείμενο αντιγράφηκε επιτυχώς.</span>
+    </div>
+
+    <!-- Academic Footer -->
+    <footer class="bg-uniwa-blueDark text-white border-t-2 border-uniwa-gold py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-b border-white/10 pb-8 mb-8">
+                <div>
+                    <span class="text-xs uppercase font-bold tracking-widest text-uniwa-gold">ΔΙΟΡΓΑΝΩΣΗ</span>
+                    <h4 class="font-serif text-base sm:text-lg font-bold mt-1 text-white">Σχολή Διοικητικών, Οικονομικών και Κοινωνικών Επιστημών</h4>
+                    <p class="text-xs text-slate-300 mt-1">Πανεπιστήμιο Δυτικής Αττικής</p>
+                </div>
+                <div class="text-left md:text-right">
+                    <span class="text-xs uppercase font-bold tracking-widest text-uniwa-gold block mb-1">ΘΕΣΜΟΣ</span>
+                    <p class="text-xs sm:text-sm text-slate-200 italic">«Η Ώρα του Ερευνητή» — Πρωτοβουλία Αριστείας &amp; Συνεργασίας</p>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-4">
+                <p>&copy; 2026 Πανεπιστήμιο Δυτικής Αττικής. Όλα τα δικαιώματα διατηρούνται.</p>
+                <div class="flex gap-4">
+                    <a href="https://sdoke.uniwa.gr/i-ora-toy-ereyniti/" target="_blank" rel="noopener noreferrer" class="hover:text-uniwa-gold transition-colors">
+                        <i class="fa-solid fa-earth-europe mr-1"></i>sdoke.uniwa.gr
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple tabs switcher inside cards
+        function switchTab(speechId, tabType) {
+            // Get all tabs buttons for this speech
+            const buttons = document.querySelectorAll(`.tab-btn-${speechId}`);
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-white', 'text-uniwa-blueDark', 'shadow-sm');
+                btn.classList.add('text-slate-500', 'hover:text-uniwa-blueDark');
+            });
+
+            // Set active button style
+            const activeBtn = document.getElementById(`tab-${speechId}-${tabType}`);
+            activeBtn.classList.remove('text-slate-500', 'hover:text-uniwa-blueDark');
+            activeBtn.classList.add('bg-white', 'text-uniwa-blueDark', 'shadow-sm');
+
+            // Toggle Content
+            const contents = document.querySelectorAll(`.speech-content-${speechId}`);
+            contents.forEach(content => content.classList.add('hidden'));
+
+            const activeContent = document.getElementById(`content-${speechId}-${tabType}`);
+            activeContent.classList.remove('hidden');
+        }
+
+        // Modal triggers
+        function openModal(id) {
+            const modal = document.getElementById(`modal-${id}`);
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        // Close Modal
+        function closeModal(id) {
+            const modal = document.getElementById(`modal-${id}`);
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modalPierrakos = document.getElementById('modal-pierrakos');
+            const modalPsaromiligkos = document.getElementById('modal-psaromiligkos');
+            if (event.target === modalPierrakos) {
+                closeModal('pierrakos');
+            }
+            if (event.target === modalPsaromiligkos) {
+                closeModal('psaromiligkos');
+            }
+        }
+
+        // Custom Toast system
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMessage');
+            toastMsg.innerText = message;
+            
+            toast.classList.remove('opacity-0', 'translate-y-20');
+            toast.classList.add('opacity-100', 'translate-y-0');
+            
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'translate-y-20');
+            }, 3000);
+        }
+
+        // Copy Press Release Text
+        function copyPressRelease() {
+            const range = document.createRange();
+            range.selectNode(document.getElementById("pressReleaseBody"));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            try {
+                document.execCommand("copy");
+                window.getSelection().removeAllRanges();
+                showToast("Το Δελτίο Τύπου αντιγράφηκε στο πρόχειρο!");
+            } catch (err) {
+                showToast("Σφάλμα κατά την αντιγραφή. Παρακαλώ επιλέξτε το κείμενο χειροκίνητα.");
+            }
+        }
+    </script>
+</body>
+</html>
